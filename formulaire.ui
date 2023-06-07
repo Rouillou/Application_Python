@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>946</width>
-    <height>815</height>
+    <height>671</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -177,7 +177,7 @@
                  </spacer>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="pushButton">
+                 <widget class="QPushButton" name="pushButtonValide">
                   <property name="text">
                    <string>Valider</string>
                   </property>
@@ -242,7 +242,14 @@
             <item>
              <layout class="QVBoxLayout" name="verticalLayout_34">
               <item>
-               <widget class="QLabel" name="label_5">
+               <widget class="QLabel" name="pseudolabel">
+                <property name="text">
+                 <string>TextLabel</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="areneLabel">
                 <property name="text">
                  <string>TextLabel</string>
                 </property>
@@ -251,7 +258,70 @@
              </layout>
             </item>
             <item>
-             <layout class="QVBoxLayout" name="verticalLayout_33">
+             <layout class="QVBoxLayout" name="verticalLayout_35">
+              <item>
+               <spacer name="verticalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_10">
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QGraphicsView" name="background">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>16777215</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <property name="leftMargin">
+             <number>5</number>
+            </property>
+            <property name="topMargin">
+             <number>5</number>
+            </property>
+            <property name="rightMargin">
+             <number>5</number>
+            </property>
+            <property name="bottomMargin">
+             <number>5</number>
+            </property>
+            <item>
+             <spacer name="horizontalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_11">
               <property name="leftMargin">
                <number>5</number>
               </property>
@@ -265,37 +335,71 @@
                <number>5</number>
               </property>
               <item>
-               <widget class="QLabel" name="label_7">
-                <property name="text">
-                 <string>TextLabel</string>
+               <layout class="QVBoxLayout" name="verticalLayout_37">
+                <property name="topMargin">
+                 <number>0</number>
                 </property>
-               </widget>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="hpLabel">
+                  <property name="text">
+                   <string>vie :</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QProgressBar" name="lifeBar">
+                  <property name="value">
+                   <number>24</number>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_38">
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="ammoLabel">
+                  <property name="text">
+                   <string>munitions :</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QProgressBar" name="ammoBar">
+                  <property name="value">
+                   <number>24</number>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_33">
+                <item>
+                 <spacer name="verticalSpacer_5">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
               </item>
              </layout>
-            </item>
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_36"/>
-            </item>
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_35"/>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <layout class="QVBoxLayout" name="verticalLayout_10">
-            <item>
-             <widget class="QGraphicsView" name="graphicsView"/>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <layout class="QVBoxLayout" name="verticalLayout_11">
-            <item>
-             <widget class="QLabel" name="label_6">
-              <property name="text">
-               <string>TextLabel</string>
-              </property>
-             </widget>
             </item>
            </layout>
           </item>
@@ -349,7 +453,7 @@
               <item>
                <layout class="QVBoxLayout" name="verticalLayout_17">
                 <item>
-                 <widget class="QPushButton" name="pushButton_3">
+                 <widget class="QPushButton" name="pushButtonLeft">
                   <property name="text">
                    <string>left</string>
                   </property>
@@ -376,7 +480,7 @@
               <item>
                <layout class="QVBoxLayout" name="verticalLayout_14">
                 <item>
-                 <widget class="QPushButton" name="pushButton_2">
+                 <widget class="QPushButton" name="pushButtonUp">
                   <property name="text">
                    <string>up</string>
                   </property>
@@ -387,7 +491,7 @@
               <item>
                <layout class="QVBoxLayout" name="verticalLayout_13">
                 <item>
-                 <widget class="QPushButton" name="pushButton_4">
+                 <widget class="QPushButton" name="pushButtonDown">
                   <property name="text">
                    <string>down</string>
                   </property>
@@ -417,7 +521,7 @@
               <item>
                <layout class="QVBoxLayout" name="verticalLayout_19">
                 <item>
-                 <widget class="QPushButton" name="pushButton_5">
+                 <widget class="QPushButton" name="pushButtonRight">
                   <property name="text">
                    <string>right</string>
                   </property>
@@ -446,7 +550,7 @@
                <number>0</number>
               </property>
               <item>
-               <widget class="QPushButton" name="pushButton_11">
+               <widget class="QPushButton" name="pushButtonShoot">
                 <property name="text">
                  <string>shoot</string>
                 </property>
@@ -457,9 +561,9 @@
             <item>
              <layout class="QVBoxLayout" name="verticalLayout_31">
               <item>
-               <widget class="QPushButton" name="pushButton_6">
+               <widget class="QCheckBox" name="checkModeAuto">
                 <property name="text">
-                 <string>mode auto/manuel</string>
+                 <string>mode automatique</string>
                 </property>
                </widget>
               </item>
@@ -501,7 +605,7 @@
               <item>
                <layout class="QVBoxLayout" name="verticalLayout_24">
                 <item>
-                 <widget class="QPushButton" name="pushButton_8">
+                 <widget class="QPushButton" name="pushButtonViewLeft">
                   <property name="text">
                    <string>left</string>
                   </property>
@@ -528,7 +632,7 @@
               <item>
                <layout class="QVBoxLayout" name="verticalLayout_27">
                 <item>
-                 <widget class="QPushButton" name="pushButton_7">
+                 <widget class="QPushButton" name="pushButtonViewUp">
                   <property name="text">
                    <string>up</string>
                   </property>
@@ -539,9 +643,9 @@
               <item>
                <layout class="QVBoxLayout" name="verticalLayout_26">
                 <item>
-                 <widget class="QPushButton" name="pushButton_10">
+                 <widget class="QPushButton" name="pushButtonViewDown">
                   <property name="text">
-                   <string>bottom</string>
+                   <string>down</string>
                   </property>
                  </widget>
                 </item>
@@ -569,7 +673,7 @@
               <item>
                <layout class="QVBoxLayout" name="verticalLayout_28">
                 <item>
-                 <widget class="QPushButton" name="pushButton_9">
+                 <widget class="QPushButton" name="pushButtonViewRight">
                   <property name="text">
                    <string>right</string>
                   </property>
@@ -658,10 +762,10 @@
    </hints>
   </connection>
   <connection>
-   <sender>pushButton</sender>
+   <sender>pushButtonValide</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
-   <slot>onButtonClicked()</slot>
+   <slot>onValideClicked()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>722</x>
@@ -673,11 +777,181 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>pushButtonDown</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onDownClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>203</x>
+     <y>672</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>472</x>
+     <y>407</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonLeft</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onLeftClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>92</x>
+     <y>672</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>472</x>
+     <y>407</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonRight</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onRightClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>314</x>
+     <y>672</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>472</x>
+     <y>407</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonShoot</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onShootClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>471</x>
+     <y>705</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>472</x>
+     <y>407</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonUp</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onUpClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>203</x>
+     <y>525</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>472</x>
+     <y>407</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonViewDown</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onDownViewClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>740</x>
+     <y>672</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>472</x>
+     <y>407</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonViewLeft</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onLeftViewClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>629</x>
+     <y>672</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>472</x>
+     <y>407</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonViewRight</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onRightViewClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>851</x>
+     <y>672</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>472</x>
+     <y>407</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonViewUp</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onUpViewClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>740</x>
+     <y>525</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>472</x>
+     <y>407</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkModeAuto</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onModeClicked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>471</x>
+     <y>601</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>472</x>
+     <y>335</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>onPseudoChange(QString)</slot>
   <slot>onArenaChange(QString)</slot>
   <slot>onPasswordChange(QString)</slot>
-  <slot>onButtonClicked()</slot>
+  <slot>onValideClicked()</slot>
+  <slot>onDownClicked()</slot>
+  <slot>onUpClicked()</slot>
+  <slot>onRightClicked()</slot>
+  <slot>onLeftClicked()</slot>
+  <slot>onDownViewClicked()</slot>
+  <slot>onUpViewClicked()</slot>
+  <slot>onRightViewClicked()</slot>
+  <slot>onLeftViewClicked()</slot>
+  <slot>onShootClicked()</slot>
+  <slot>onModeClicked(bool)</slot>
  </slots>
 </ui>
