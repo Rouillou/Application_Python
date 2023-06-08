@@ -52,6 +52,13 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def onShootClicked(self):
         agent.tirer(True)
+        print("je tire")
+
+        QtCore.QTimer.singleShot(1000, self.stopShoot)
+
+    def stopShoot(self):
+        agent.tirer(False)
+        print("j'arrête de tirer")
     
     def onDownViewClicked(self):
         agent.orienter(3)
