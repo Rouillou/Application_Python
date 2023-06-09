@@ -2,6 +2,9 @@ import j2l.pytactx.agent as pytactx
 agent = None
 
 def setAgent(nouvelAgent):
+  """
+   
+  """
   global agent
   agent = nouvelAgent
 
